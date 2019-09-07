@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
+import "./Welcome.css"
+import Particles from 'react-particles-js';
 
 class Welcome extends Component {
     state = {}
     render() {
         return (
-            <div>
-                <h1>Welcome</h1>
-            </div>
+            <React.Fragment class="welcome">
+                <Particles />
+                <p style={{ color: "white" }}>t</p>
+            </React.Fragment>
         );
     }
 }

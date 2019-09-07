@@ -1,0 +1,17 @@
+.container {
+  background: transparent;
+  border: 1px solid white;
+  padding: 1rem;
+  display: inline-block;
+}
+.container .linkButton {
+  color: white;
+  margin: 1rem;
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  transition-duration: 2s;
+}
+.container .linkButton:hover {
+  font-weight: bold;
+}
