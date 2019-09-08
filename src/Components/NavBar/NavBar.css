@@ -1,17 +1,25 @@
 .container {
   background: transparent;
-  border: 1px solid white;
-  padding: 1rem;
-  display: inline-block;
+  /* border: 1px solid white; */
+  /* padding: 1rem; */
+  margin: 1rem;
+  display: table-cell;
+  /* position: absolute; */
+  z-index: -1;
 }
 .container .linkButton {
+  display: inline;
   color: white;
-  margin: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
   background: transparent;
   border: none;
   font-weight: 500;
-  transition-duration: 2s;
+  transition-duration: 0.4s;
 }
 .container .linkButton:hover {
-  font-weight: bold;
+  border-bottom: 5px solid white;
+}
+.container .linkButton:focus {
+  outline: none;
 }

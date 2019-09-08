@@ -1,17 +1,25 @@
-import React, { Component } from 'react';
-import "./Welcome.css"
-import Particles from 'react-particles-js';
+import React, { Component } from "react";
+import "./Welcome.css";
+import $ from "jquery";
 
 class Welcome extends Component {
-    state = {}
-    render() {
-        return (
-            <React.Fragment class="welcome">
-                <Particles />
-                <p style={{ color: "white" }}>t</p>
-            </React.Fragment>
-        );
-    }
+  state = {};
+  componentDidMount = () => {
+    this.showName();
+  };
+  showName = event => {
+    let name = $("#MyName").text();
+    console.log("vijay", name);
+  };
+  render() {
+    return (
+      <div className="welcome">
+        <p id="MyName" className="name">
+          I'm Vijay
+        </p>
+      </div>
+    );
+  }
 }
 
 export default Welcome;

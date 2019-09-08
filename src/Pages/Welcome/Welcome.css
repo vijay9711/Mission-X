@@ -1,3 +1,10 @@
 .welcome {
-  border: 1px solid black;
+  border: 1px solid white;
+  margin-top: 1rem;
+  /* position: fixed; */
+}
+.name {
+  font-size: 5rem;
+  color: white;
+  font-weight: 600;
 }
