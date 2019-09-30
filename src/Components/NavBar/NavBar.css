@@ -6,6 +6,8 @@
   display: table-cell;
   /* position: absolute; */
   z-index: -1;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .container .linkButton {
   display: inline;
@@ -20,6 +22,19 @@
 .container .linkButton:hover {
   border-bottom: 5px solid white;
 }
+.container .linkButton a {
+  color: white;
+}
+.container .linkButton a:hover {
+  text-decoration: none;
+}
 .container .linkButton:focus {
   outline: none;
+}
+@media only screen and (max-width: 550px) {
+  .container {
+    visibility: hidden;
+    margin: 0;
+    padding: 0;
+  }
 }

@@ -3,16 +3,19 @@ import "./App.css";
 import Route from "./Route/index.js";
 import NavBar from "./Components/NavBar/NavBar.js";
 import Particles from "react-particles-js";
+import SideBar from "./Components/SideBar/SideBar.js";
+import GroupingPage from "./Pages/GroupPages/GroupPages.js";
 function App() {
   return (
     <React.Fragment>
-      <NavBar />
+      <SideBar class="sideBar" />
+      <NavBar class="navBar" />
       <Particles
-        style={{ position: "fixed", zIndex: "-1" }}
+        style={{ position: "fixed", zIndex: "-1", marginTop: "-50px" }}
         params={{
           particles: {
             number: {
-              value: 80
+              value: 70
             },
             size: {
               value: 1
@@ -28,7 +31,8 @@ function App() {
           }
         }}
       />
-      <Route />
+      {/* <Route /> */}
+      <GroupingPage />
     </React.Fragment>
   );
 }

@@ -5,14 +5,16 @@ class NavBar extends Component {
   render() {
     // snow strom package is there
     return (
-      <div>
-        <div className="container px-2">
-          <button className="linkButton">HOME</button>
-          <button className="linkButton">ARTICLES</button>
-          <button className="linkButton">PORTFOLIO</button>
-          <button className="linkButton">ABOUT</button>
-          <button className="linkButton">CONTACT</button>
-        </div>
+      <div className="container">
+        <button className="linkButton">
+          <a href="#home">HOME</a>
+        </button>
+        <button className="linkButton">
+          <a href="#blog">ARTICLES</a>
+        </button>
+        <button className="linkButton">PORTFOLIO</button>
+        <button className="linkButton">ABOUT</button>
+        <button className="linkButton">CONTACT</button>
       </div>
     );
   }

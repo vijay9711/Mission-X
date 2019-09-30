@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./Welcome.css";
 import $ from "jquery";
 import Typed from "react-typed";
+import Pic from "../../Assets/2.jpeg";
 
 class Welcome extends Component {
   state = {};
@@ -11,27 +12,24 @@ class Welcome extends Component {
   showName = event => {
     let name = $("#MyName").text();
     console.log("vijay", name);
-    // $(".kayo-work").typed({
-    //   strings: ["Web Developer.", "Web Designer.", "Software developer"],
-    //   cursorChar: "",
-    //   typeSpeed: 100,
-    //   loop: true,
-    //   backSpeed: 50
-    // });
   };
   render() {
     return (
       <div className="welcome">
         <div className="Developer-intro">
-          <p id="MyName" className=" m-0 p-0">
+          <label id="MyName" className=" m-0 p-0">
             Hi, I'm
-          </p>
-          <p className="Developer-name m-0 p-0">Vijay</p>
+          </label>
+
+          <img src={Pic} alt="img" className="profile"></img>
+          <br></br>
+          <label className="Developer-name m-0 p-0">Vijay </label>
+          <br></br>
           <Typed
             strings={["Software Developer", "web developer"]}
             className="typed-content"
             typeSpeed={70}
-            backSpeed={30}
+            backSpeed={40}
             loop
           />
         </div>

@@ -1,0 +1,14 @@
+.sideBar-container {
+  border: 2px solid white;
+  /* visibility: hidden; */
+  display: none;
+  position: fixed;
+  width: 2rem;
+  height: 100%;
+}
+@media only screen and (max-width: 550px) {
+  .sideBar-container {
+    /* visibility: visible; */
+    display: block;
+  }
+}
